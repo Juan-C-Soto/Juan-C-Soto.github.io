@@ -18,3 +18,7 @@ p {
 .cert-badges img {
   margin-top: 5px;
 }
+.resume-link {
+  display: block;
+  margin-bottom: 15px;
+}
