@@ -22,3 +22,11 @@ p {
   display: block;
   margin-bottom: 15px;
 }
+.certifications {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.cert {
+  text-align: center;
+}
