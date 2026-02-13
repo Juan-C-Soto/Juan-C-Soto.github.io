@@ -30,3 +30,14 @@ p {
 .cert {
   text-align: center;
 }
+.education-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.edu-left {
+  text-align: left;
+}
+.edu-right {
+  text-align: right;
+}
