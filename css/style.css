@@ -55,3 +55,21 @@ p {
 .job-right {
   text-align: right;
 }
+.project-item {
+  margin-bottom: 30px;
+}
+.project-header {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.project-item strong {
+  font-weight: 600;
+}
+.project-item ul {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+.project-item li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
