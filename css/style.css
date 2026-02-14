@@ -41,3 +41,17 @@ p {
 .edu-right {
   text-align: right;
 }
+.work-item {
+  margin-bottom: 25px;
+}
+.work-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.job-left {
+  text-align: left;
+}
+.job-right {
+  text-align: right;
+}
