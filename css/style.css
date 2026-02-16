@@ -23,6 +23,28 @@ p {
   display: block;
   margin-bottom: 15px;
 }
+.resume-section {
+  position: relative;
+}
+.resume-dropdown {
+  display: none;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 5px;
+}
+.resume-section:hover .resume-dropdown {
+  display: block;
+}
+.resume-dropdown a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #333;
+}
+.resume-dropdown a:hover {
+  background-color: #f0f0f0;
+}
 .certifications {
   display: flex;
   gap: 40px;
