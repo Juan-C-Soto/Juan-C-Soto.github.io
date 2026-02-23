@@ -109,3 +109,16 @@ p {
 .certifications-section:hover .certifications-dropdown {
   display: block;
 }
+.Labs-section {
+  position: relative;
+}
+.Labs-dropdown {
+  display: none;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 5px;
+}
+.Labs-section:hover .Labs-dropdown {
+  display: block;
+}
