@@ -144,7 +144,7 @@ p {
   transition: transform 0.3s ease;
 }
 .lab-img-wrapper img:hover {
-  transform: scale(1.1);
+  transform: none;
 }
 .lightbox-toggle {
   display: none;
@@ -174,5 +174,5 @@ p {
   border-radius: 8px;
   box-shadow: 0 0 30px rgba(0,0,0,0.5);
   transform: none;
-  cursor: zoom-out:
+  cursor: zoom-out;
 }
