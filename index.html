@@ -49,5 +49,14 @@
         <div id="lightbox" onclick="closelightbox()">
             <img id="lightbox-img" src="" alt="Zoomed Lab Screenshot">
         </div>
+        <script>
+            function openLightbox(img) {
+                document.getElementByID('lightbox-img').src = img.src;
+                document.getElementByID('lightbox').classlist.add('active');
+            }
+            function closeLightbox() {
+                document.getElementByID('lightbox').classlist.remove('activate')
+            }
+        </script>
     </body>
 </html>
