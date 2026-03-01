@@ -36,28 +36,18 @@
                     <strong>LabEx</strong>
                     <div class="lab-gallery">
                         <div class="lab-img-wrapper">
-                            <label for="img1"><img src="assets/Lab1.png" alt="LabEx Screenshot 1"></label>
-                            <input type="checkbox" id="img1" class="lightbox-toggle">
-                            <label class="lightbox-overlay" for="img1">
-                                <img src="assets/Lab1.png" alt="LabEx Screenshot 1">
-                            </label>
+                            <img src="assets/Lab1.png" alt="LabEx Screenshot 1" onclick="openlightbox(this)">
                         </div>
                         <div class="lab-img-wrapper">
-                            <label for="img2"><img src="assets/Lab2.png" alt="LabEx Screenshot 2"></label>
-                            <input type="checkbox" id="img2" class="lightbox-toggle">
-                            <label class="lightbox-overlay" for="img2">
-                                <img src="assets/Lab2.png" alt="LabEx Screenshot 2">
-                            </label>
-                        </div>
+                            <img src="assets/Lab2.png" alt="LabEx Screenshot 2" onclick="openlightbox(this)">
                         <div class="lab-img-wrapper">
-                            <label for="img3"><img src="assets/Lab3.png" alt="LabEx Screenshot 3"></label>
-                            <input type="checkbox" id="img3" class="lightbox-toggle">
-                            <label class="lightbox-overlay" for="img3">
-                                <img src="assets/Lab3.png" alt="LabEx Screenshot 3">
-                            </label>
+                            <img src="assets/Lab3.png" alt="LabEx Screenshot 3" onclick="openlightbox(this)">
                         </div>
                 </div>
             </div>
+        </div>
+        <div id="lightbox" onclick="closelightbox()">
+            <img id="lightbox-img" src="" alt="Zoomed Lab Screenshot">
         </div>
     </body>
 </html>
