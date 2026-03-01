@@ -139,7 +139,7 @@ p {
 .lab-img-wrapper img {
   width: 100%;
   height: 100%;
-  objecct-fit: cover;
+  object-fit: cover;
   display: block;
   transition: transform 0.3s ease;
 }
@@ -167,8 +167,5 @@ p {
   max-height: 90vh;
   border-radius: 8px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-  transform: none;
-}
-.lightbox-overlay img:hover {
   transform: none;
 }
