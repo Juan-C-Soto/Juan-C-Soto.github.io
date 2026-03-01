@@ -146,15 +146,8 @@ p {
 .lab-img-wrapper img:hover {
   transform: scale(1.1);
 }
-.lightbox-toggle {
-  display: none;
-}
-.lab-img-wrapper label {
-  cursor: zoom-in;
-  display: block;
-}
-.lightbox-overlay {
-  display: none;
+#lightbox {
+  display: none; 
   position: fixed;
   top: 0;
   left: 0;
@@ -164,17 +157,17 @@ p {
   z-index: 999;
   justify-content: center;
   align-items: center;
+  cursor: zoom-out;
 }
-.lightbox-toggle:checked + .lightbox-overlay {
+#lightbox.active {
   display: flex;
 }
-.lightbox-overlay img {
+#lightbox img {
   max-width: 90%;
   max-height: 90vh;
   border-radius: 8px;
-  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   transform: none;
-  cursor: zoom-out;
 }
 .lightbox-overlay img:hover {
   transform: none;
