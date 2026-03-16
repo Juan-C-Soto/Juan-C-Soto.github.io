@@ -45,27 +45,27 @@
                         </div>
                         <div class="lab-img-wrapper" onclick="openLightbox('assets/Lab3.png', 'LabEx Screenshot 3')">
                             <img src="assets/Lab3.png" alt="LabEx Screenshot 3">
-                            <div src="lab-img-caption">Lab 3</div>
+                            <div class="lab-img-caption">Lab 3</div>
                         </div>
                 </div>
             </div>
             </div>
         </div>
-        <div id="lightbox" onclick="closelightbox()">
+        <div id="lightbox" onclick="closeLightbox()">
             <div id="lightbox-box">
                 <img id="lightbox-img" src="" alt="">
                 <p id="lightbox-caption"></p>
-                <button id="lightbox-close" onclick="closelightbox()">X Close</button>
+                <button id="lightbox-close" onclick="closeLightbox()">X Close</button>
             </div>
         </div>
         <script>
             function openLightbox(src, caption) {
-                document.getElementById('Lightbox-img').src = src;
+                document.getElementById('lightbox-img').src = src;
                 document.getElementById('lightbox-caption').textContent = caption;
-                document.getElementById('Lightbox').classList.add('active');
+                document.getElementById('lightbox').classList.add('active');
             }
             function closeLightbox() {
-                document.getElementById('Lightbox').classList.remove('active')
+                document.getElementById('lightbox').classList.remove('active')
             }
         </script>
     </body>
