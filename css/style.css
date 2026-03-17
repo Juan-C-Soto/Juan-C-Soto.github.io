@@ -202,3 +202,15 @@ p {
 #lightobx-close:hover {
   background-color: #555;
 }
+.Cisco-section {
+  position: relative;
+}
+.Cisco-dropdown {
+  display: none;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 5px;
+}
+.Cisco-section:hover .Cisco-dropdown {
+  display: block;
