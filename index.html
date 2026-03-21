@@ -81,8 +81,32 @@
         <div class="Cisco-dropdown">
             <div class="Cisco">
                 <strong>Cisco Packet Tracer</strong>
+                <div class="lab-gallery">
+                  <div class="lab-img-wrapper" onclick="openLightbox('assets/Home_Network.png', 'Home_Network Screenshot')">
+                      <img src="assets/Home_Network.png" alt="Home_Network Screenshot">
+                      <div class="lab-img-caption">Home Network</div>
+                  </div>
+                    <div class="lab-img-wrapper" onclick="openLightbox('assets/Vlan_Lab.png', 'Vlan_lab Screenshot')">
+                        <img src="assets/Vlan_Lab.png" alt="Vlan_Lab Screenshot">
+                        <div class="lab-img-caption">Vlan Lab</div>
+                    </div>
+                    <div class="lab-img-wrapper" onclick="openLightbox('assets/Vlan_Lab_Notes.pn', 'Vlan_Lab_Notes Screenshot')">
+                        <img src="assets/Vlan_Lab_Notes.png" alt="Vlan_Lab_Notes Screenshot">
+                        <div class="lab-img-caption">Vlan Lab Notes</div>
+                    </div>
             </div>
         </div>
     </div>
+ </div>
+         <script>
+            function openLightbox(src, caption) {
+                document.getElementById('lightbox-img').src = src;
+                document.getElementById('lightbox-caption').textContent = caption;
+                document.getElementById('lightbox').classList.add('active');
+            }
+            function closeLightbox() {
+                document.getElementById('lightbox').classList.remove('active')
+            }
+        </script>
     </body>
 </html>
