@@ -57,6 +57,9 @@ p {
 .cert {
   text-align: center;
   color: #000000;
+.cert strong {
+  color: #000000;
+}
 }
 .education-item {
   display: flex;
