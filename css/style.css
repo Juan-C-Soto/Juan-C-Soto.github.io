@@ -119,6 +119,12 @@ p {
 }
 .Labs-section {
   position: relative;
+.labs {
+  color: #000000;
+}
+.labs strong {
+  color: #000000;
+}
 }
 .Labs-dropdown {
   display: none;
@@ -213,6 +219,12 @@ p {
 .Cisco-section {
   position: relative;
 }
+.cisco {
+  color: #000000;
+}
+.cisco strong {
+  color: #000000;
+}
 .Cisco-dropdown {
   display: none;
   background-color: white;
@@ -300,6 +312,6 @@ p {
   cursor: pointer;
   font-size: 13px;
 }
-#lightobx-close:hover {
+#lightbox-close:hover {
   background-color: #555;
 }
