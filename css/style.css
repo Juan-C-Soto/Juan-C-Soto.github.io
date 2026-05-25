@@ -119,10 +119,10 @@ p {
 }
 .Labs-section {
   position: relative;
-.labs {
+.Labs {
   color: #000000;
 }
-.labs strong {
+.Labs strong {
   color: #000000;
 }
 }
@@ -219,10 +219,10 @@ p {
 .Cisco-section {
   position: relative;
 }
-.cisco {
+.Cisco {
   color: #000000;
 }
-.cisco strong {
+.Cisco strong {
   color: #000000;
 }
 .Cisco-dropdown {
