@@ -5,40 +5,58 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <h1>My Portfolio Page</h1>
-       <p>Here you will find my resume, labs I've worked on, certification badges recieved and documents made explaining the processes and steps taken in said labs. </p>
-       <div class="resume-section">
-           <h2 onclick="toggleSection('resume-dropdown')">Resume</h2>
-           <div class="resume-dropdown" id="resume-dropdown">
-               <a href="ResumeJuanSoto.html" target="_blank">View HTML Resume</a>
-               <a href="assets/Resume-Juan-Soto.pdf" download>Download PDF Version</a>
-           </div>
-       </div>
-       <div class="certifications-section">
-           <h3 onclick="toggleSection('certifications-dropdown')">Certifications</h3>
-           <div class="certifications-dropdown" id="certifications-dropdown">
-               <div class="certifications">
-                   <div class="cert">
-                       <strong>CompTIA Security+</strong> - July 2024<br>
-                       <img src="assets/security.png" alt="CompTIA Security+ Badge" width="100">
-                   </div>
-                   <div class="cert">
-                       <strong>CompTIA Network+</strong> - October 2025<br>
-                       <img src="assets/network.png" alt="CompTIA Network+ Badge" width="100">
-                   </div>
-               </div>
-           </div>
-       </div>
-        <div class="Labs-section">
-            <h4 onclick="toggleSection('Labs-dropdown')">Labs</h4>
-            <div class="Labs-dropdown" id="Labs-dropdown">
+
+        <nav class="navbar">
+            <span class="nav-brand">Juan Soto</span>
+            <div class="nav-links">
+                <a href="#resume">Resume</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#labs">Labs</a>
+                <a href="#cisco">Cisco Packet Tracer</a>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <h1>My Portfolio Page</h1>
+            <p>Here you will find my resume, labs I've worked on, certification badges received and documents made explaining the processes and steps taken in said labs.</p>
+        </div>
+
+        <section id="resume" class="portfolio-section">
+            <h2>Resume</h2>
+            <div class="section-content">
+                <a class="section-btn" href="ResumeJuanSoto.html" target="_blank">View HTML Resume</a>
+                <a class="section-btn" href="assets/Resume-Juan-Soto.pdf" download>Download PDF Version</a>
+            </div>
+        </section>
+
+        <section id="certifications" class="portfolio-section">
+            <h2>Certifications</h2>
+            <div class="section-content">
+                <div class="certifications">
+                    <div class="cert">
+                        <img src="assets/security.png" alt="CompTIA Security+ Badge" width="100">
+                        <strong>CompTIA Security+</strong>
+                        <span>July 2024</span>
+                    </div>
+                    <div class="cert">
+                        <img src="assets/network.png" alt="CompTIA Network+ Badge" width="100">
+                        <strong>CompTIA Network+</strong>
+                        <span>October 2025</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="labs" class="portfolio-section">
+            <h2>Labs</h2>
+            <div class="section-content">
                 <div class="lab">
                     <strong>LabEx</strong>
                     <div class="lab-gallery">
-                       <div class="lab-img-wrapper" onclick="openLightbox('assets/Lab1.png', 'LabEx Screenshot 1')">
-                           <img src="assets/Lab1.png" alt="LabEx Screenshot 1">
-                           <div class="lab-img-caption">Lab 1</div>
-                       </div>
+                        <div class="lab-img-wrapper" onclick="openLightbox('assets/Lab1.png', 'LabEx Screenshot 1')">
+                            <img src="assets/Lab1.png" alt="LabEx Screenshot 1">
+                            <div class="lab-img-caption">Lab 1</div>
+                        </div>
                         <div class="lab-img-wrapper" onclick="openLightbox('assets/Lab2.png', 'LabEx Screenshot 2')">
                             <img src="assets/Lab2.png" alt="LabEx Screenshot 2">
                             <div class="lab-img-caption">Lab 2</div>
@@ -55,17 +73,42 @@
                             <img src="assets/Lab5.png" alt="LabEx Screenshot 5">
                             <div class="lab-img-caption">Lab 5</div>
                         </div>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <section id="cisco" class="portfolio-section">
+            <h2>Cisco Packet Tracer</h2>
+            <div class="section-content">
+                <div class="lab">
+                    <strong>Cisco Packet Tracer</strong>
+                    <div class="lab-gallery">
+                        <div class="lab-img-wrapper" onclick="openLightbox('assets/Home_Network.png', 'Home Network Screenshot')">
+                            <img src="assets/Home_Network.png" alt="Home Network Screenshot">
+                            <div class="lab-img-caption">Home Network</div>
+                        </div>
+                        <div class="lab-img-wrapper" onclick="openLightbox('assets/Vlan_Lab.png', 'VLAN Lab Screenshot')">
+                            <img src="assets/Vlan_Lab.png" alt="VLAN Lab Screenshot">
+                            <div class="lab-img-caption">VLAN Lab</div>
+                        </div>
+                        <div class="lab-img-wrapper" onclick="openLightbox('assets/Vlan_Lab_Notes.png', 'VLAN Lab Notes Screenshot')">
+                            <img src="assets/Vlan_Lab_Notes.png" alt="VLAN Lab Notes Screenshot">
+                            <div class="lab-img-caption">VLAN Lab Notes</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
+        </section>
+
         <div id="lightbox" onclick="closeLightbox()">
-            <div id="lightbox-box">
+            <div id="lightbox-box" onclick="event.stopPropagation()">
                 <img id="lightbox-img" src="" alt="">
                 <p id="lightbox-caption"></p>
                 <button id="lightbox-close" onclick="closeLightbox()">X Close</button>
             </div>
         </div>
+
         <script>
             function openLightbox(src, caption) {
                 document.getElementById('lightbox-img').src = src;
@@ -73,44 +116,20 @@
                 document.getElementById('lightbox').classList.add('active');
             }
             function closeLightbox() {
-                document.getElementById('lightbox').classList.remove('active')
+                document.getElementById('lightbox').classList.remove('active');
             }
-        </script>
-    <div class="Cisco-section">
-        <h5 onclick="toggleSection('Cisco-dropdown')">Cisco Packet Tracer</h5>
-        <div class="Cisco-dropdown" id="Cisco-dropdown">
-            <div class="Cisco">
-                <strong>Cisco Packet Tracer</strong>
-                <div class="lab-gallery">
-                  <div class="lab-img-wrapper" onclick="openLightbox('assets/Home_Network.png', 'Home_Network Screenshot')">
-                      <img src="assets/Home_Network.png" alt="Home_Network Screenshot">
-                      <div class="lab-img-caption">Home Network</div>
-                  </div>
-                    <div class="lab-img-wrapper" onclick="openLightbox('assets/Vlan_Lab.png', 'Vlan_lab Screenshot')">
-                        <img src="assets/Vlan_Lab.png" alt="Vlan_Lab Screenshot">
-                        <div class="lab-img-caption">Vlan Lab</div>
-                    </div>
-                    <div class="lab-img-wrapper" onclick="openLightbox('assets/Vlan_Lab_Notes.pn', 'Vlan_Lab_Notes Screenshot')">
-                        <img src="assets/Vlan_Lab_Notes.png" alt="Vlan_Lab_Notes Screenshot">
-                        <div class="lab-img-caption">Vlan Lab Notes</div>
-                    </div>
-            </div>
-        </div>
-    </div>
- </div>
-         <script>
-            function toggleSection(id) {
-                const el = document.getElementById(id);
-                el.classList.toggle('active');
-            }
-            function openLightbox(src, caption) {
-                document.getElementById('lightbox-img').src = src;
-                document.getElementById('lightbox-caption').textContent = caption;
-                document.getElementById('lightbox').classList.add('active');
-            }
-            function closeLightbox() {
-                document.getElementById('lightbox').classList.remove('active')
-            }
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const navHeight = document.querySelector('.navbar').offsetHeight;
+                        const top = target.getBoundingClientRect().top + window.scrollY - navHeight - 16;
+                        window.scrollTo({ top, behavior: 'smooth' });
+                    }
+                });
+            });
         </script>
     </body>
 </html>
