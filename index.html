@@ -8,15 +8,15 @@
         <h1>My Portfolio Page</h1>
        <p>This is a portfolio page highlighting <strong>labs, scripts and certifications</strong> done by Juan Soto</p>
        <div class="resume-section">
-           <h2>Resume</h2>
-           <div class="resume-dropdown">
+           <h2 onclick="toggleSection('resume-dropdown')">Resume</h2>
+           <div class="resume-dropdown" id="resume-dropdown">
                <a href="ResumeJuanSoto.html" target="_blank">View HTML Resume</a>
                <a href="assets/Resume-Juan-Soto.pdf" download>Download PDF Version</a>
            </div>
        </div>
        <div class="certifications-section">
-           <h3>Certifications</h3>
-           <div class="certifications-dropdown">
+           <h3 onclick="toggleSection('certificatoin-dropdown')">Certifications</h3>
+           <div class="certifications-dropdown" id="certifications-dropdown">
                <div class="certifications">
                    <div class="cert">
                        <strong>CompTIA Security+</strong> - July 2024<br>
@@ -30,8 +30,8 @@
            </div>
        </div>
         <div class="Labs-section">
-            <h4>Labs</h4>
-            <div class="Labs-dropdown">
+            <h4 onclick="toggleSection('Labs-dropdown')">Labs</h4>
+            <div class="Labs-dropdown" id="Labs-dropdown">
                 <div class="lab">
                     <strong>LabEx</strong>
                     <div class="lab-gallery">
@@ -58,7 +58,7 @@
                 </div>
             </div>
             </div>
-        </div>
+         </div>
         <div id="lightbox" onclick="closeLightbox()">
             <div id="lightbox-box">
                 <img id="lightbox-img" src="" alt="">
@@ -77,8 +77,8 @@
             }
         </script>
     <div class="Cisco-section">
-        <h5>Cisco Packet Tracer</h5>
-        <div class="Cisco-dropdown">
+        <h5 onclick="toggleSection('Cisco-dropdown')">Cisco Packet Tracer</h5>
+        <div class="Cisco-dropdown" id="Cisco-dropdown">
             <div class="Cisco">
                 <strong>Cisco Packet Tracer</strong>
                 <div class="lab-gallery">
@@ -99,6 +99,10 @@
     </div>
  </div>
          <script>
+            function toggleSection(id) {
+                const el = document.getElementById(id);
+                el.classList.toggle('active');
+            }
             function openLightbox(src, caption) {
                 document.getElementById('lightbox-img').src = src;
                 document.getElementById('lightbox-caption').textContent = caption;
