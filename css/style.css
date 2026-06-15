@@ -48,7 +48,7 @@ body {
 }
 .hero {
   width: 100%;
-  padding: 48px 48px 36px;
+  padding: 28px 32px 24px;
   text-align: center;
   border-bottom: 1px solid rgba(114, 56, 61,0.3);
 }
@@ -66,8 +66,9 @@ body {
 }
 .portfolio-section {
   width: 100%;
-  padding: 40px 48px;
+  padding: 24px 32px;
   border-bottom: 1px solid rgba(114, 56, 61, 0.25);
+  overflow-x: hidden;
 }
 .portfolio-section h2 {
   color: #AC9C8D;
@@ -130,6 +131,8 @@ body {
   flex-wrap: wrap;
   gap: 16px;
   padding-top: 4px;
+  max-width: 100%
+  overflow-x: hidden;
 }
 .lab-img-wrapper {
   width: 180px;
