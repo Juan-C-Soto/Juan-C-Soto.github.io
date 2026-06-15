@@ -8,6 +8,7 @@ body {
   line-height: 1.5;
   background-color: #322D29;
   color: #72383D;
+  overflow-x: hidden;
 }
 .navbar {
   position: fixed;
@@ -19,26 +20,30 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 32px;
+  padding: 0 16px;
   border-bottom: 2px solid #72383D;
   z-index: 1000;
+  overflow-x: hidden;
 }
 .nav-brand {
   color: #AC9C8D;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 0.04em;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .nav-links {
   display: flex;
-  gap: 2px;
-  overflow: hidden;
+  gap: 0;
+  flex-shrink: 1;
+  min-width: 0;
 }
 .nav-links a {
   color: #AC9C8D;
   text-decoration: none;
-  font-size: 13px;
-  padding: 6px 8px;
+  font-size: 12px;
+  padding: 6px 7px;
   border-radius: 4px;
   border: 1px solid transparent;
   transition: background 0.15s, border-color 0.15s;
