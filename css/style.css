@@ -217,9 +217,6 @@ p {
   cursor: pointer;
   font-size: 13px;
 }
-#lightobx-close:hover {
-  background-color: #555;
-}
 .Cisco-section {
   position: relative;
 }
