@@ -1,5 +1,5 @@
 {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
   font-family: Arial, sans-serif;
@@ -32,6 +32,7 @@ body {
 .nav-links {
   display: flex;
   gap: 2px;
+  overflow: hidden;
 }
 .nav-links a {
   color: #AC9C8D;
@@ -40,7 +41,7 @@ body {
   padding: 6px 8px;
   border-radius: 4px;
   border: 1px solid transparent;
-  transition: background 0.15s, borer-color 0.15s;
+  transition: background 0.15s, border-color 0.15s;
   white-space: nowrap;
 }
 .nav-links a:hover {
@@ -51,7 +52,7 @@ body {
   width: 100%;
   padding: 28px 32px 24px;
   text-align: center;
-  border-bottom: 1px solid rgba(114, 56, 61,0.3);
+  border-bottom: 1px solid rgba(114, 56, 61, 0.3);
 }
 .hero h1 {
   color: #AC9C8D;
@@ -88,7 +89,7 @@ body {
   display: inline-block;
   padding: 10px 20px;
   background-color: #3d3530;
-  color: #AC9C8D
+  color: #AC9C8D;
   text-decoration: none;
   border: 1px solid #72383D;
   border-radius: 6px;
@@ -132,7 +133,7 @@ body {
   flex-wrap: wrap;
   gap: 16px;
   padding-top: 4px;
-  max-width: 100%
+  max-width: 100%;
   overflow-x: hidden;
 }
 .lab-img-wrapper {
