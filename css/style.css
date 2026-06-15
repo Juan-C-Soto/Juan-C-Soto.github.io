@@ -130,6 +130,12 @@ p {
 .Labs strong {
   color: #000000;
 }
+.lab {
+  color: #000000;
+}
+.lab strong {
+  color: #000000;
+}
 .Labs-dropdown {
   display: none;
   background-color: white;
