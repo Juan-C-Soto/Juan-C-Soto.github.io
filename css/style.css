@@ -17,7 +17,7 @@ h2 {
   padding-bottom: 5px;
   margin-top: 30px;
 }
-h2, h3, h4 {
+h2, h3, h4, h5 {
   cursor: pointer;
   user-select: none;
 }
