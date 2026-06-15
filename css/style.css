@@ -37,7 +37,7 @@ p {
   padding: 10px;
   margin-top: 5px;
 }
-.resume-section:hover .resume-dropdown {
+.resume-dropdown.active {
   display: block;
 }
 .resume-dropdown a {
@@ -114,7 +114,7 @@ p {
   padding: 10px;
   margin-top: 5px;
 }
-.certifications-section:hover .certifications-dropdown {
+.certifications-dropdown.active {
   display: block;
 }
 .Labs-section {
@@ -133,7 +133,7 @@ p {
   padding: 10px;
   margin-top: 5px;
 }
-.Labs-section:hover .Labs-dropdown {
+.Labs-dropdown.active {
   display: block;
 }
 .lab-gallery {
@@ -232,7 +232,7 @@ p {
   padding: 10px;
   margin-top: 5px;
 }
-.Cisco-section:hover .Cisco-dropdown {
+.Cisco-dropdown.active {
   display: block;
 }
 #lightbox-close:hover {
