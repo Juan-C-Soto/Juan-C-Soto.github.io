@@ -17,6 +17,10 @@ h2 {
   padding-bottom: 5px;
   margin-top: 30px;
 }
+h2, h3, h4 {
+  cursor: pointer;
+  user-select: none;
+}
 p {
   margin: 5px 0;
 }
