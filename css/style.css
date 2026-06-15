@@ -31,7 +31,7 @@ body {
 }
 .nav-links {
   display: flex;
-  gap: 4px;
+  gap: 2px;
 }
 .nav-links a {
   color: #AC9C8D;
