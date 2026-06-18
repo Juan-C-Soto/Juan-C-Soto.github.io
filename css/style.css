@@ -249,7 +249,20 @@ body {
 #lightbox-close:hover {
   background-color: #8a4548;
 }
-* ── Mobile menu toggle (hidden on desktop) ── */
+
+/* ── Mobile menu toggle (hidden on desktop) ── */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid #72383D;
+  border-radius: 4px;
+  color: #AC9C8D;
+  font-size: 20px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+/* ── Mobile menu toggle (hidden on desktop) ── */
 .nav-toggle {
   display: none;
   background: none;
