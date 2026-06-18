@@ -1,9 +1,6 @@
 * {
   box-sizing: border-box;
 }
-html {
-  overflow-x: hidden;
-}
 
 body {
   font-family: Arial, sans-serif;
@@ -12,7 +9,6 @@ body {
   line-height: 1.5;
   background-color: #322D29;
   color: #72383D;
-  overflow-x: hidden;
 }
 
 /* ── Navbar ── */
@@ -20,7 +16,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 98%;
+  width: 100%;
   height: 56px;
   background-color: #1e1a17;
   display: flex;
