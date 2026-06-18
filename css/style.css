@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  overflow-x: hidden;
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -9,6 +12,7 @@ body {
   line-height: 1.5;
   background-color: #322D29;
   color: #72383D;
+  overflow-x: hidden;
 }
 
 /* ── Navbar ── */
