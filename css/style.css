@@ -71,9 +71,12 @@ body {
 }
 
 .hero h1 {
-  color: #AC9C8D;
-  font-size: 32px;
   margin-bottom: 12px;
+}
+
+.hero h1 img {
+  display: block;
+  margin: 0 auto;
 }
 
 .hero p {
