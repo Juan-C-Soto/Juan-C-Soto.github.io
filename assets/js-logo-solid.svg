@@ -1,0 +1,15 @@
+<svg width="220" height="320" viewBox="0 0 220 320" xmlns="http://www.w3.org/2000/svg">
+<title>JS monogram logo, solid background</title>
+<defs>
+<clipPath id="badgeClip">
+<rect x="10" y="0" width="200" height="200" rx="28"/>
+</clipPath>
+</defs>
+<rect x="10" y="0" width="200" height="200" rx="28" fill="#322D29"/>
+<g clip-path="url(#badgeClip)">
+<text x="65" y="145" font-family="Arial, Helvetica, sans-serif" font-size="150" font-weight="700" fill="#AC9C8D" text-anchor="middle">J</text>
+<text x="155" y="145" font-family="Arial, Helvetica, sans-serif" font-size="150" font-weight="700" fill="#72383D" text-anchor="middle">S</text>
+</g>
+<text x="110" y="245" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="500" fill="#322D29" text-anchor="middle" letter-spacing="3">JUAN SOTO</text>
+<text x="110" y="268" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#72383D" text-anchor="middle" letter-spacing="2">NETWORK &amp; IT SOLUTIONS</text>
+</svg>
