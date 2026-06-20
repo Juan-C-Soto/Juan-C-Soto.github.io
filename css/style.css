@@ -167,6 +167,10 @@ body {
   margin-bottom: 12px;
 }
 
+.lab-gallery + strong {
+  margin-top: 20px;
+}
+
 /* Desktop: horizontal */
 .lab-gallery {
   display: flex;
