@@ -160,7 +160,8 @@ body {
   width: 100%;
 }
 
-.lab strong {
+.lab strong,
+.notes strong {
   display: block;
   color: #AC9C8D;
   font-size: 15px;
