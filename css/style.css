@@ -161,7 +161,8 @@ body {
 }
 
 .lab strong,
-.notes strong {
+.notes strong,
+.projects strong {
   display: block;
   color: #AC9C8D;
   font-size: 15px;
