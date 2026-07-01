@@ -211,6 +211,11 @@ body {
   color: #AC9C8D;
 }
 
+/*-hidden sections-*/
+.hidden {
+  display: none;
+}
+
 /* ── Lightbox ── */
 #lightbox {
   display: none;
