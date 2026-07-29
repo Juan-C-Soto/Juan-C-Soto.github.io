@@ -77,6 +77,7 @@ body {
 .hero h1 img {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .hero p {
@@ -92,6 +93,11 @@ body {
   width: 100%;
   padding: 24px 32px;
   border-bottom: 1px solid rgba(114, 56, 61, 0.25);
+}
+
+.portfolio-section:last-of-type {
+  border-bottom: none;
+  padding-bottom: 60px;
 }
 
 .portfolio-section h2 {
@@ -129,7 +135,6 @@ body {
 }
 
 /* ── Certifications ── */
-/* Desktop: horizontal */
 .certifications {
   display: flex;
   flex-direction: row;
@@ -155,22 +160,29 @@ body {
   color: #72383D;
 }
 
-/* ── Lab gallery ── */
-.lab {
+/* ── Lab / Notes / Projects ── */
+.lab,
+.notes,
+.projects {
   width: 100%;
 }
 
-.lab strong,
+/* ── Lab subsections ── */
+.lab-subsection {
+  margin-bottom: 28px;
+}
+
+.lab-subsection:last-child {
+  margin-bottom: 0;
+}
+
+.lab-subsection strong,
 .notes strong,
 .projects strong {
   display: block;
   color: #AC9C8D;
   font-size: 15px;
   margin-bottom: 12px;
-}
-
-.lab-gallery + strong {
-  margin-top: 20px;
 }
 
 /* Desktop: horizontal */
@@ -211,9 +223,9 @@ body {
   color: #AC9C8D;
 }
 
-/*-hidden sections-*/
+/* ── Hidden sections ── */
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 /* ── Lightbox ── */
@@ -331,8 +343,9 @@ body {
     padding: 24px 16px 20px;
   }
 
-  .hero h1 {
-    font-size: 22px;
+  /* Scale logo down on mobile */
+  .hero h1 img {
+    width: 120px;
   }
 
   .hero p {
@@ -341,6 +354,10 @@ body {
 
   .portfolio-section {
     padding: 20px 16px;
+  }
+
+  .portfolio-section:last-of-type {
+    padding-bottom: 40px;
   }
 
   .portfolio-section h2 {
@@ -387,5 +404,9 @@ body {
 
   .lab-img-wrapper img {
     height: 80px;
+  }
+
+  .lab-subsection {
+    margin-bottom: 20px;
   }
 }
