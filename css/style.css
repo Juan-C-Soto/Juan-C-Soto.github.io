@@ -246,6 +246,7 @@ body {
   border: 1px solid #444444;
   border-radius: 8px;
   background-color: #1e1e1e;
+  overflow: auto;
 }
 
 /* ── Hidden sections ── */
